@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import Container from '@mui/material/Container';
 type Props = {
   children: JSX.Element;
 };
@@ -14,7 +13,7 @@ const Content: React.FC<Props> = (props) => {
       }}
     >
       <Header />
-      <div style={{ padding: 24 }}>{props.children}</div>
+      <div style={{ padding: "1.5rem 4.5rem" }}>{props.children}</div>
     </div>
   );
 };

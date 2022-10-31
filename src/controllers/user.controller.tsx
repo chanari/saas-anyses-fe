@@ -13,13 +13,13 @@ function* watcherUser() {
 }
 
 function* watchGetAllUser(action: IAction) {
-  const rs: Promise<any> = yield call(callAPI);
-
-  //call back component
-  action.setUser(rs);
-
-  //save data in reducer
-  yield put({ type: 'GET_ALL_USER_SUCCESS', data: rs });
+  // const rs: Promise<any> = yield call(callAPI);
+  //
+  // //call back component
+  // action.setUser(rs);
+  //
+  // //save data in reducer
+  // yield put({ type: 'GET_ALL_USER_SUCCESS', data: rs });
 
   try {
   } catch (error) {}

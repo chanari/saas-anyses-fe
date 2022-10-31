@@ -1,25 +1,31 @@
-import { Routes, Route } from 'react-router-dom';
-import LeaveList from '../views/LeaveList';
-import Login from '../views/Login';
+import {Routes, Route, Navigate, Outlet} from 'react-router-dom';
+import LeaveList from '../views/Leave/LeaveList';
+import Login from "../views/Login";
+import Content from "../layouts/shared/Content";
+import React from 'react'
 
-const Home = () => {
+const ProtectedRoute = ({ redirectPath = '/login' }) => {
+  const token = localStorage.getItem('authorization-token')
+  if (!token) return (<Navigate to={redirectPath} replace />);
+
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <Content>
+      <Outlet />
+    </Content>
   );
 };
 
-const Index = () => {
+
+const PageRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="leave" element={<LeaveList />}>
-        <Route path=":id" element={<h1>Leave detail</h1>} />
-        <Route path="create" element={<h1>Leave create</h1>} />
+      <Route path="login" element={<Login />} />
+      <Route element={<ProtectedRoute />}>
+        <Route path="/" element={<LeaveList />} />
+        <Route path="leaves" element={<LeaveList />} />
       </Route>
     </Routes>
   );
 };
 
-export default Index;
+export default PageRoutes;
