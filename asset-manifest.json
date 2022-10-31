@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/saas-anyses-fe/static/css/main.11391da3.css",
+    "main.js": "/saas-anyses-fe/static/js/main.22878773.js",
+    "static/js/787.1f013cd5.chunk.js": "/saas-anyses-fe/static/js/787.1f013cd5.chunk.js",
+    "static/media/login.svg": "/saas-anyses-fe/static/media/login.972350d73e13ab5cf06955b9650b9406.svg",
+    "index.html": "/saas-anyses-fe/index.html",
+    "main.11391da3.css.map": "/saas-anyses-fe/static/css/main.11391da3.css.map",
+    "main.22878773.js.map": "/saas-anyses-fe/static/js/main.22878773.js.map",
+    "787.1f013cd5.chunk.js.map": "/saas-anyses-fe/static/js/787.1f013cd5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11391da3.css",
+    "static/js/main.22878773.js"
+  ]
+}
