@@ -1,6 +1,6 @@
 {
   "name": "react-typescript",
-  "homepage": "https://sesquanghn.github.io/saas-anyses-fe",
+  "homepage": "https://chanari.github.io/saas-anyses-fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "NODE_ENV=production react-scripts build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
