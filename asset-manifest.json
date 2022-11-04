@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/saas-anyses-fe/static/css/main.9b047e66.css",
-    "main.js": "/saas-anyses-fe/static/js/main.bd6725df.js",
+    "main.js": "/saas-anyses-fe/static/js/main.291084c1.js",
     "static/media/login.svg": "/saas-anyses-fe/static/media/login.972350d73e13ab5cf06955b9650b9406.svg",
     "index.html": "/saas-anyses-fe/index.html",
     "main.9b047e66.css.map": "/saas-anyses-fe/static/css/main.9b047e66.css.map",
-    "main.bd6725df.js.map": "/saas-anyses-fe/static/js/main.bd6725df.js.map"
+    "main.291084c1.js.map": "/saas-anyses-fe/static/js/main.291084c1.js.map"
   },
   "entrypoints": [
     "static/css/main.9b047e66.css",
-    "static/js/main.bd6725df.js"
+    "static/js/main.291084c1.js"
   ]
 }
