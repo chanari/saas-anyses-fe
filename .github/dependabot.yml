@@ -8,7 +8,3 @@ updates:
       timezone: Asia/Tokyo
     open-pull-requests-limit: 1
     target-branch: master
-    reviewers:
-      - PORT-INC/ship-reviewer
-    assignees:
-      - PORT-INC/ship-reviewer
