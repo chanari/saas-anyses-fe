@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "06:00"
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 1
+    target-branch: main
+    reviewers:
+      - PORT-INC/ship-reviewer
+    assignees:
+      - PORT-INC/ship-reviewer
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "PORT-INC/port-inc-infra"
+    groups:
+      no-major:
+        update-types:
+          - "minor"
+          - "patch"
